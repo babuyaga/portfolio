@@ -1,6 +1,6 @@
 import React from 'react';
 import './rankheading.scss';
-import CurrencyFormat from 'react-currency-format';
+
 
 function RankHeading(prop){
 

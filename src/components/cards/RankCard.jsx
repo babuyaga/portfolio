@@ -1,6 +1,6 @@
 import React from 'react';
 import './rankcard.scss';
-import CurrencyFormat from 'react-currency-format';
+
 
 function RankCard(prop){
 
@@ -18,7 +18,7 @@ return(<div className="rank__card">
     </div>
 </div>
 
-<div className="rank__card_price"><div className="rank__card_symb"> </div><span ><CurrencyFormat value={volume?volume:"0.00"} displayType={'text'} thousandSeparator={true} prefix={''} /></span></div>
+<div className="rank__card_price"><div className="rank__card_symb"> </div><span ></span></div>
 
 <div className="rank__card_price" id={change<0?"red__text":"green__text"}><span>{change>0?"+":""}</span><span>{change?change:0}%</span></div>
 <div className="rank__card_price"  id="rank__card_heading_owner"><span >{owners?owners:""}k</span></div>
