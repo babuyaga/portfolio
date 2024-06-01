@@ -1,16 +1,18 @@
 @import './theme-colors.scss';
 
-body::-webkit-scrollbar {
+html::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-body {
+html {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
 }
+
+
 
 body {
   margin: 0;
@@ -20,8 +22,10 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
-
+.text-color-green
+{
+  color:#6AFF7F;
+}
 #tsparticles {
   position: absolute;
   height: 725px;

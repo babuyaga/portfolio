@@ -38,7 +38,7 @@ function Home() {
           <SectionComp className="all__section section__1" idnm="section__1">
             <Partition direction="column" partid="square__1" bgcolor="transparent">
 
-              <div className="text__holder"><span className="heading__1">Develop, launch, and optimize
+              <div className="text__holder"><span className="heading__1">Develop, <span className="text-color-green">launch,</span> and optimize
               </span>
                 <span className="heading__1">innovative products </span></div>
               <div className="text__holder"><span className="heading__2">{/*appinfo.brandname*/} Transform your ideas into
@@ -46,7 +46,7 @@ function Home() {
               <div className="button__holder"><button id="explore__button" className="home__button">Email</button><button id="invite__button" className="home__button">LinkedIn</button></div>
 
               <div className="text__holder" id="section__bottom_text">
-                <span onClick={() => { console.log("Hello") }} className="learn__more">Learn more{/*appinfo.brandname*/} </span>
+                <span onClick={() => { console.log("Hello") }} className="learn__more">Let's talk{/*appinfo.brandname*/} </span>
                 <div className="arrow-right--learn-more"></div>
               </div>
             </Partition>
