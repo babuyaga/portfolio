@@ -1,0 +1,35 @@
+@import "../theme-colors.scss";
+
+.category__card{
+  width:340px; //392
+  height:247px;
+  display:block;
+  background-color:blue;
+  border-radius:3px;
+box-sizing:border-box;
+margin:auto;
+}
+
+.category__card:hover{
+  box-shadow:$feature-card-shadow-hov;
+}
+
+@media only screen and (min-width: 900px) and (max-width:1200px) {
+
+}
+
+
+
+@media only screen and (min-width: 900px){
+.category__card{
+
+}
+
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+}

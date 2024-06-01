@@ -1,0 +1,131 @@
+@import "../theme-colors.scss";
+
+.rank__holder{
+  margin:0 10px;
+  box-sizing:border-box;
+  gap:1px !important;
+}
+
+
+#rank__1{
+  @extend .rank__holder;
+}
+
+#rank__2{
+  @extend .rank__holder;
+}
+
+#rank__3{
+  @extend .rank__holder;
+}
+
+
+.rank__card{
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  width:100%;
+  box-sizing: border-box;
+  padding:20px 0px;
+  border-bottom:1px solid #ffffff1b;
+  background-color:#ffffff06;
+font-size:0.8rem;
+font-weight:bolder;
+cursor:pointer;
+}
+
+
+
+.rank__card_left{
+display:flex;
+flex-direction:row;
+align-items: center;
+justify-content: center;
+gap:10px;
+flex-basis:250px;
+}
+.rank__card_right{
+  font-size:1.2rem;
+  font-weight:normal;
+}
+
+.rank__card:hover{
+  box-shadow: 0px 0px 10px $recent-card-bg;
+  z-index:2;
+  transition: box-shadow 0.2s;
+    border-radius:3px;
+}
+
+.collection__icon{
+  display:block;
+  width:50px;
+  height:50px;
+  border-radius:30px;
+  background-color:$icon-bg-color;
+}
+.rankcard__nm_price{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
+
+.rank__card_price{
+  color:$icon-bg-color;
+display:flex;
+flex-direction:row;
+align-items: center;
+  gap:4px;
+  flex-basis:150px;
+  justify-content: center;
+}
+
+#red__text{
+  color:#CA351F;
+}
+
+#green__text{
+  color:#15B292;
+}
+
+.rank__card_symb{
+  background-image:url('../icons/eth.svg');
+  background-size: cover;
+  background-position:center;
+  color:white;
+height:27px;
+width:27px;
+filter: invert(1);
+}
+#rankcard_rank{
+  display:none;
+}
+@media only screen and (min-width: 900px) and (max-width:1200px) {
+
+}
+
+@media only screen and (min-width: 900px){
+  .rank__holder{
+    margin:10px 20px;
+  }
+
+.rank__card{
+  background-color:transparent;
+font-size:1rem;
+padding:20px;
+}
+
+.rank__card_left{
+  gap:20px;
+  flex-basis:350px;
+  justify-content: flex-start;
+}
+
+#rankcard_rank{
+  display:flex;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+}

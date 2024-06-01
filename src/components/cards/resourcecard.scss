@@ -1,0 +1,35 @@
+@import "../theme-colors.scss";
+
+.resource__card{
+  width:358px; //392
+  height:355px;
+  display:block;
+  background-color:pink;
+  border-radius:3px;
+box-sizing:border-box;
+margin:auto;
+}
+
+.resource__card:hover{
+  box-shadow:$feature-card-shadow-hov;
+}
+
+@media only screen and (min-width: 900px) and (max-width:1200px) {
+
+}
+
+
+
+@media only screen and (min-width: 900px){
+.resource__card{
+width:394px;
+}
+
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+}

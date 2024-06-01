@@ -1,0 +1,47 @@
+@import "../theme-colors.scss";
+
+.rank__title{
+  background-color: transparent;
+  padding:15px 20px 0px 20px;
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+}
+
+
+.rank__division{
+  display:block;
+  flex-direction:row;
+  justify-content: center;
+  margin:auto;
+  width:100%;
+    padding: 0px;
+    border-radius:6px;
+
+}
+
+
+.rank__list{
+display:block;
+height:435px;
+ -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+   overflow-y: scroll;
+padding: 10px 10px 10px 20px;
+scroll-snap-type: y proximity;
+}
+
+.rank__list::-webkit-scrollbar {
+width:10px;
+}
+
+.rank__list::-webkit-scrollbar-track{
+  background-color:transparent;
+}
+.rank__list::-webkit-scrollbar-thumb{
+  border:1px solid gray;
+  border-radius:3px;
+}
+
+.rank__list::-webkit-scrollbar-thumb:hover{
+  background-color:gray;
+}

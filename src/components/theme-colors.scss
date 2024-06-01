@@ -1,0 +1,146 @@
+// background-top color should be dark
+// background-bottom color should be light
+
+//General Theme Colors
+$primary-color-dark:#011623;
+$secondary-color-dark:#011623;
+$highlight-color-dark:#00060a;;
+
+$primary-color: #012235;
+$secondary-color:#035282;
+$highlight-color:#0582ce;
+
+$primary-color-light:#29aaf9;
+$secondary-color-light:#75c9fb;
+$highlight-color-light:#c2e7fd;
+
+$text-color-highlight-dark: #000305;
+$text-color-highlight-light:#d1fff7;
+$text-color-normal:#010d14;
+
+
+
+$base: #fefefe;
+$navbar-color:#212021;
+$base-primary:#00211b;
+
+$border-radius:3px;
+
+//UI specific colors
+
+
+
+$background-top:#000000;
+$background-bottom:#FFFFFF;
+$background-transparent:#0000000b;
+
+$app-bg:transparent;
+$app-text-color:#FFFFFF;
+
+
+$app-link-text: #000000;
+
+$max-width-app:1536px; //100vw
+$max-width-nav:100vw; //100vw
+
+$span-bg-color:transparent;
+
+//Navbar colors except Search bar
+
+// $navbar-bg:#212021;
+$navbar-bg:#000000;
+$navbar-shadow: 0px 0px 0px #00000000;
+
+
+$navbar-icon:#21212100;
+$navbar-icon-hov:#31303000;
+$icon-bg-color:#FFFFFF;
+
+$navbar-icon-text:#ffffff;
+$navbar-icon-text-hov:#000000;
+
+$navbar-icon-border:1px solid #212121;
+$navbar-icon-border-hov:1px solid #000000;
+
+$navbar-icon-shadow:0px 0px 10px #000000;
+$navbar-icon-shadow-hover:0px 0px 3px #000000;
+
+$menu-phone-color:#3d3d3d;
+
+//searchbar
+
+$navbar-search-bg:#FFFFFF00; //Including the form and enclosed input and button
+
+$searchbar-bg:  #121212; //just the input
+$searchbar-bg-hov:  #121212;
+$searchbar-bg-foc: #121212;
+
+
+$searchbar-border: 1px solid #3d3d3d;
+$searchbar-border-hov: 1px solid #aaaaaaa6;
+$searchbar-border-foc: 1px solid #aaaaaaa6;
+
+
+$search-bar-text: #aaaaaa;
+$search-bar-text-hov: #aaaaaa;
+$search-bar-active-text: #aaaaaa;
+
+
+
+//for the search button
+
+$search-button-bg: #313030;
+$search-button-bg-hov:#313030;
+$search-button-bg-active: #aaaaaa;
+
+$search-but-border: 1px solid #313030;
+$search-but-border-hov: 1px solid #313030;
+$search-but-border-foc: 1px solid #313030;
+
+$search-button-text: #000000;
+$search-button-text-hov: #000000;
+$search-button-active-text: #000000;
+
+//navbar
+$navbar-opacity:1;
+$navbar-opacity-hover:1;
+
+
+// searchbar
+
+
+//FilterBar
+$bar-width: 270px;
+
+//sections
+
+$section-1-bg: transparent;
+$section-2-bg: transparent;
+$section-3-bg: transparent;
+$section-4-bg:transparent;
+$section-5-bg:transparent;
+$section-6-bg:transparent;
+$section-7-bg:#212021;
+$section-8-bg:$search-button-bg;
+$section-8-border-bottom:1px solid #ffffff2b;
+//cards
+
+$feature-card-bg:#FFFFFF;
+$feature-card-shadow-hov:0px 0px 15px #FFFFFF;
+
+$recent-card-bg:#FFFEFE;
+
+
+//Invite button
+
+$home-button-bg:none;
+$home-button-act-bg:#FFFFFFab;
+
+//top collection drop text
+
+$drop-text-bg:#FFFFFFab;
+
+$mailing-list-button-bg:#aaaaaa;
+$mailing-list-button-hov:#FFFFFF;
+
+$community-links-holder-bg: red;

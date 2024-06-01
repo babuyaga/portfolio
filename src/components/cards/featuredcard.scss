@@ -1,0 +1,43 @@
+@import '../theme-colors.scss';
+
+.featured__card{
+  display:block;
+  width:360px;
+ height:400px;
+  max-width:360px;
+  max-height:400px;
+  margin:auto;
+  border:1px solid #ffffff;
+background-color:#ffffff;
+background-image:url('../icons/hero_image.png');
+background-size:contain;
+background-repeat: no-repeat;
+background-size:100%;
+background-position: center;
+border-radius: 3px;
+transition: box-shadow 0.6s;
+opacity:0.7;
+}
+
+.featured__card:hover{
+  box-shadow: $feature-card-shadow-hov;
+  opacity:1;
+}
+
+
+@media only screen and (min-width: 900px) and (max-width:1200px) {
+
+}
+
+@media only screen and (min-width: 900px){
+.featured__card{
+  width:550px;
+  height:494px;
+  max-width:550px;
+  max-height:494px;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+  }

@@ -1,0 +1,36 @@
+@import "../theme-colors.scss";
+
+.trend__card{
+  width:339px; //392
+  height:339px;
+  display:block;
+  background-color:yellow;
+  border-radius:3px;
+box-sizing:border-box;
+margin:auto;
+}
+
+.trend__card:hover{
+  box-shadow:$feature-card-shadow-hov;
+}
+
+@media only screen and (min-width: 900px) and (max-width:1200px) {
+
+}
+
+
+
+@media only screen and (min-width: 900px){
+.trend__card{
+  width:392px;
+  height:339px;
+}
+
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+}

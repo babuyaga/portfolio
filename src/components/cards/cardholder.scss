@@ -1,0 +1,29 @@
+@import "../theme-colors.scss";
+
+@import "../theme-colors.scss";
+
+.card__holder{
+  display:flex;
+  flex-direction: column; //change to flex and adjust padding and all that crap.
+  width:354px;
+  background-color:transparent;
+  border-radius:$border-radius;
+  margin:auto;
+  gap:20px;
+}
+
+
+@media only screen and (min-width: 900px) and (max-width:1200px) {
+
+}
+
+
+
+@media only screen and (min-width: 900px){
+
+  .card__holder{
+    width:394px;
+  }
+
+
+}
