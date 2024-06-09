@@ -59,7 +59,7 @@ function Home() {
 
 
           <SectionComp className="all__section" idnm="section__2">  <div className="text__holder"><span className="heading__2">Case Studies</span></div></SectionComp>
-          <SectionComp className="all__section" idnm="section__3"><SwiperComp><RecentCard /><RecentCard /><RecentCard /></SwiperComp></SectionComp>
+          <SectionComp className="all__section" idnm="section__3"><SwiperComp><RecentCard /><RecentCard /><RecentCard imageClass="banking" projectName="Banking app" projectDesc="Budgeting and banking app that let's you transfer money to any account. Built on NextJS 14" /></SwiperComp></SectionComp>
 
 
           <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Blog posts</span> <div className="heading__2" id="drop_text"><span>| last 30 days</span></div></div></SectionComp>

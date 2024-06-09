@@ -27,11 +27,9 @@ const arrayChildren = Children.toArray(children);
 console.log(arrayChildren);
 useEffect(()=>{
 
-  if(window.innerWidth > 1200){
+  if(window.innerWidth > 1500){
       setView(3);
-    }else if((window.innerWidth < 1200)&&(window.innerWidth > 900)){
-  setView(2);
-}else if(window.innerWidth < 900){
+    }else {
   setView(1)
 }
 

@@ -1,1 +1,10 @@
-<svg id="SvgjsSvg1032" width="288" height="288" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1033"></defs><g id="SvgjsG1034"><svg xmlns="http://www.w3.org/2000/svg" xmlns:svgjs="http://svgjs.com/svgjs" xmlns:xlink="http://www.w3.org/1999/xlink" width="288" height="288"><svg xmlns="http://www.w3.org/2000/svg" width="288" height="288" viewBox="0 0 24 24"><path fill="#ffffff" d="M5 19h-4v-8h4v8zm6 0h-4v-18h4v18zm6 0h-4v-12h4v12zm6 0h-4v-4h4v4zm1 2h-24v2h24v-2z" class="color000 svgShape color969696"></path></svg></svg></g></svg>
+<svg id="SvgjsSvg1032" width="288" height="288" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+  <defs id="SvgjsDefs1033"></defs>
+  <g id="SvgjsG1034">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:svgjs="http://svgjs.com/svgjs" xmlns:xlink="http://www.w3.org/1999/xlink" width="288" height="288">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="288" height="288">
+        <path fill="#ffffff" d="m23,7c.552,0,1-.448,1-1v-3c0-.552-.448-1-1-1h-1v-.5c0-.827-.673-1.5-1.5-1.5H4.5c-1.379,0-2.5,1.121-2.5,2.5v19c0,1.379,1.121,2.5,2.5,2.5h16c.827,0,1.5-.673,1.5-1.5v-3.538h1c.552,0,1-.448,1-1v-3c0-.552-.448-1-1-1h-1v-1h1c.552,0,1-.448,1-1v-3c0-.552-.448-1-1-1h-1v-.962h1Zm0-4v3h-1v-3h1ZM4.5,1h1.5v18h-1.5c-.565,0-1.081.195-1.5.512V2.5c0-.827.673-1.5,1.5-1.5Zm16.5,21.5c0,.275-.225.5-.5.5H4.5c-.827,0-1.5-.673-1.5-1.5s.673-1.5,1.5-1.5h16.5v2.5Zm2-7.538v3h-1v-3h1Zm0-6v3h-1v-3h1Zm-2,10.038H7V1h13.5c.275,0,.5.225.5.5v17.5Z"/>
+      </svg>
+    </svg>
+  </g>
+</svg>

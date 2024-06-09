@@ -11,10 +11,12 @@
   background-color:transparent;
   border-radius:$border-radius;
   margin:auto;
+  background-color:#00003b9c;
+  border:1px solid #00007E;
 }
 .recent__card:hover{
-  box-shadow: 0 0 15px #FFFFFFab;
   z-index:3;
+  cursor: pointer;
 }
 .recent__card_img{
 width:100%;
@@ -64,7 +66,7 @@ visibility: visible;
   transition: opacity 0.5s;
 }
 .recent__card_info{
-background-color:brown;
+background-image:#000000;
 border-radius: inherit;
 border-top-left-radius: 0px;
 border-top-right-radius: 0px;
@@ -101,6 +103,13 @@ border:none;
 padding:8px 15px;
 border-radius:3px;
 font-weight:bold;
+}
+
+.banking{
+  background-image:url("../icons/banking.png");
+background-position:center;
+background-size:fill;
+background-repeat:no-repeat;
 }
 
 @media only screen and (min-width: 900px) and (max-width:1200px) {

@@ -1,1 +1,8 @@
-<svg id="SvgjsSvg1001" width="288" height="288" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1002"></defs><g id="SvgjsG1008" transform="matrix(1,0,0,1,0,0)"><svg xmlns="http://www.w3.org/2000/svg" width="288" height="288" viewBox="0 0 24 24"><path d="M0 8h24v16h-24v-16zm0-8v6h24v-6h-24z" fill="#e2e2e2" class="color000 svgShape"></path></svg></g></svg>
+<svg id="SvgjsSvg1001" width="288" height="288" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+  <defs id="SvgjsDefs1002"></defs>
+  <g id="SvgjsG1008" transform="matrix(1,0,0,1,0,0)">
+    <svg xmlns="http://www.w3.org/2000/svg" width="288" height="288" viewBox="0 0 24 24">
+      <path d="m8,14h8v1h-8v-1Zm14-6.707v16.707H2V2.5c0-1.378,1.122-2.5,2.5-2.5h10.207l7.293,7.293Zm-7-.293h5.293L15,1.707v5.293Zm6,16v-15h-7V1H4.5c-.827,0-1.5.673-1.5,1.5v20.5h18Z" fill="#e2e2e2" class="color000 svgShape"></path>
+    </svg>
+  </g>
+</svg>
