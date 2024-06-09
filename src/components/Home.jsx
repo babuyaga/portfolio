@@ -7,8 +7,6 @@ import Partition from "./Partition.jsx";
 import FeaturedCard from "./cards/FeaturedCard.jsx";
 import RecentCard from "./cards/RecentCard.jsx";
 import SwiperComp from "./carousel/SwiperComp.jsx";
-import Particles from "react-tsparticles";
-import { config } from './background/particle-config.js';
 import RankCard from './cards/RankCard.jsx';
 import InfoCard from "./cards/InfoCard.jsx";
 import TrendCard from "./cards/TrendCard.jsx";
@@ -16,9 +14,23 @@ import CategoryCard from "./cards/CategoryCard.jsx";
 import ResourceCard from "./cards/ResourceCard.jsx";
 import CardHolder from "./cards/CardHolder.jsx";
 import RankHolder from "./containers/RankHolder.jsx";
+import ParticlesComp from "./background/ParticlesComp.jsx";
 
 
 function Home() {
+
+
+const infos = [{
+  title:"Product Management Consulting",text:"Expertise in product strategy, roadmapping, and lifecycle management.",partId:"info__part_1"
+},{
+  title:"Market Research & Strategy Development",text:"Conducting market analysis and developing strategic plans.",partId:"info__part_2"
+},{
+  title:"SaaS Implementation & Onboarding",text:"Ensuring smooth SaaS product transitions from sales to adoption.",partId:"info__part_3"
+},{
+  title:"Fullstack Web Development with NextJS",text:"Building scalable web applications with NextJS for high performance.",partId:"info__part_4"
+}]
+
+
 
 
   const handleScroll = () => {
@@ -33,14 +45,13 @@ function Home() {
       <div className="app">
         <TopNavbar />
         <div className="app__body">
-          <Particles id="tsparticles" options={config}/>
-
+                 <ParticlesComp/>
           <SectionComp className="all__section section__1" idnm="section__1">
             <Partition direction="column" partid="square__1" bgcolor="transparent">
 
-              <div className="text__holder"><span className="heading__1">Develop, <span className="text-color-green">launch,</span> and optimize
+              <div className="text__holder"><span className="heading__1">Develop, <span className="text-color-green"><span className="hover_letter_holder"><span className="hover_letter">l</span><span className="hover_letter">a</span><span className="hover_letter">u</span><span className="hover_letter">n</span><span className="hover_letter">c</span><span className="hover_letter">h</span></span>,</span> and optimize
               </span>
-                <span className="heading__1">innovative products </span></div>
+                <span className="heading__1"> innovative products<span className="blinking-span">.</span> </span></div>
               <div className="text__holder"><span className="heading__2">{/*appinfo.brandname*/} Transform your ideas into
               </span><span className="heading__2">real-life solutions</span></div>
               <div className="button__holder"><button id="explore__button" className="home__button">Email</button><button id="invite__button" className="home__button">LinkedIn</button></div>
@@ -58,11 +69,11 @@ function Home() {
 
 
 
-          <SectionComp className="all__section" idnm="section__2">  <div className="text__holder"><span className="heading__2">Case Studies</span></div></SectionComp>
-          <SectionComp className="all__section" idnm="section__3"><SwiperComp><RecentCard /><RecentCard /><RecentCard imageClass="banking" projectName="Banking app" projectDesc="Budgeting and banking app that let's you transfer money to any account. Built on NextJS 14" /></SwiperComp></SectionComp>
+          <SectionComp className="all__section" idnm="section__2">  <div className="text__holder"><span className="heading__2">Top Projects</span></div></SectionComp>
+          <SectionComp className="all__section" idnm="section__3"><SwiperComp><RecentCard /><RecentCard imageClass="banking" projectName="Banking app" projectDesc="Budgeting and banking app that let's you transfer money to any account. Built on NextJS 14" /><RecentCard /></SwiperComp></SectionComp>
 
 
-          <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Blog posts</span> <div className="heading__2" id="drop_text"><span>| last 30 days</span></div></div></SectionComp>
+          <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Blog posts</span> {/*<div className="heading__2" id="drop_text"><span>| last 30 days</span></div>*/}</div></SectionComp>
           <SectionComp className="all__section" idnm="section__5">
             {/*  <Partition direction="column" partid="rank__1" bgcolor="transparent">
                 <RankCard /><RankCard/>    <RankCard/><RankCard/>    <RankCard/>
@@ -78,7 +89,7 @@ function Home() {
           </SectionComp>
 
           <SectionComp className="all__section" idnm="section__6">
-            <Partition direction="row" partid="ranking__partition" bgcolor="transparent">  <div className="button__holder"><button id="explore__button" className="home__button">View Rankings</button></div></Partition>
+            <Partition direction="row" partid="ranking__partition" bgcolor="transparent">  <div className="button__holder"><button id="explore__button" className="home__button">View All</button></div></Partition>
           </SectionComp>
 
           {/* <SectionComp className="all__section" idnm="section__7"> <div className="text__holder" id="top__collection"><span className="heading__2">Trending in</span> <div className="heading__2" id="drop_text"><span>all categories</span></div></div></SectionComp>
@@ -91,19 +102,20 @@ function Home() {
         </SwiperComp>
     </SectionComp> */}
 
-          <SectionComp className="all__section" idnm="section__9"> <div className="text__holder" id="top__collection"><span className="heading__2">Create and sell your NFTs</span> </div></SectionComp>
+          <SectionComp className="all__section" idnm="section__9"> <div className="text__holder" id="top__collection"><span className="heading__2">Guiding Your Digital Path</span> </div></SectionComp>
           <SectionComp className="all__section" idnm="section__10">
-            <InfoCard partId="info__part_1" />
-            <InfoCard partId="info__part_2" />
-            <InfoCard partId="info__part_3" />
-            <InfoCard partId="info__part_4" />
+           {infos.map((info) => (
+    <InfoCard key={info.id} partId={info.partId} text={info.text} title={info.title} />
+))
+}
+            
           </SectionComp>
 
-          <SectionComp className="all__section" idnm="section__11"> <div className="text__holder" id="top__collection"><span className="heading__2">Resources for getting started</span></div></SectionComp>
+          <SectionComp className="all__section" idnm="section__11"> <div className="text__holder" id="top__collection"><span className="heading__2">Case Studies</span></div></SectionComp>
           <SectionComp className="all__section" idnm="section__12"><SwiperComp><ResourceCard /><ResourceCard /><ResourceCard /></SwiperComp></SectionComp>
 
 
-          <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Browse by category</span></div></SectionComp>
+          <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Places I've worked at</span></div></SectionComp>
           <SectionComp className="all__section" idnm="section__5">
             <Partition direction="column" partid="rank__1" bgcolor="transparent">
               <CategoryCard />

@@ -7,6 +7,10 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  user-select: none; /* Standard syntax */
+-webkit-user-select: none; /* For Safari */
+-moz-user-select: none; /* For Firefox */
+-ms-user-select: none; 
 }
 body{
 margin:0;
@@ -15,7 +19,10 @@ background-image:linear-gradient(to bottom, black, black, black, $section-3-bg);
 display:flex;
 flex-direction:column;
 justify-content:center;
+
 }
+
+
 
 
 #tsparticles{

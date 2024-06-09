@@ -74,7 +74,40 @@ a {
 span {
   background-color: $span-bg-color;
 }
+.hover_letter_holder{
+  display:inline-flex;
+  width:fit-content;
+  justify-content:center;
+}
+.hover_letter{
+  background-color:#00000000;
 
+flex-grow:1;
+display:inline-flex;
+justify-content: center;
+transition:all 1s ease-in;
+}
+
+.hover_letter:hover{
+  background-color:#6AFF7F;
+  color:#00007E;
+  transition:all 0.2s ease-out;
+}
+
+
+@keyframes blink {
+  0%, 100% {
+    background-color: transparent;
+  }
+  50% {
+    background-color:#6AFF7F;
+    color:#00007E;
+  }
+}
+
+.blinking-span {
+  animation: blink 1.2s infinite;
+}
 
 //sections
 

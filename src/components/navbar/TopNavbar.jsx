@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavbarItem from "./NavbarItem.jsx";
 import SearchInput from "./SearchInput.jsx";
 import MenuButtonHolder from "./MenuButtonHolder.jsx";
@@ -9,7 +9,7 @@ import "./topnavbar.scss";
 function TopNavbar(prop){
 
 
-return(<div className="topnavbar">
+return(<div className="topnavbar" style={{backgroundColor:"black"}}>
           <div className="topnavbar__width-control" >
             <NavbarItem id="logo"> <div className="comp__logo"><h1>Product Messaih</h1></div> </NavbarItem>
         {/* <NavbarItem id="search"> <SearchInput placeholdercomp="Search SilverVault" onFormSubmit={e=>e.preventDefault()}/> </NavbarItem> */}

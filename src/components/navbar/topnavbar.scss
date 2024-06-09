@@ -6,7 +6,7 @@
   width:100vw;
   height:fit-content;
   margin:auto;
-background-color:#000000;
+
 opacity:$navbar-opacity;
 position:fixed;
 z-index:100;
@@ -27,7 +27,7 @@ https://colorhunt.co/palette/0000003e065f700b978e05c2
   flex-direction:row;
   justify-content: space-between;
   gap:5px;
-  background-color:$navbar-bg;
+  
   padding: 8px 20px;
  box-shadow: $navbar-shadow;
 }

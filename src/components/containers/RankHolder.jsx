@@ -9,7 +9,7 @@ function RankHolder({children}){
                         <RankHeading/>
                 </div>
           <div className="rank__list">
-              <RankCard/>          <RankCard/>          <RankCard/>        
+          <RankCard/>   <RankCard/>   <RankCard/>          <RankCard/>          <RankCard/>        
           </div>
         </div>);
 }
