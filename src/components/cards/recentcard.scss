@@ -112,6 +112,23 @@ background-size:fill;
 background-repeat:no-repeat;
 }
 
+
+.portfolio{
+  background-image:url("../icons/livereaction.png");
+background-position:center;
+background-size:contain;
+background-repeat:no-repeat;
+}
+
+
+.livereaction{
+  background-image:url("../icons/portfolio.png");
+background-position:center;
+background-size:contain;
+background-repeat:no-repeat;
+}
+
+
 @media only screen and (min-width: 900px) and (max-width:1200px) {
 
 }

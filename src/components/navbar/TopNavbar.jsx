@@ -11,9 +11,9 @@ function TopNavbar(prop){
 
 return(<div className="topnavbar" style={{backgroundColor:"black"}}>
           <div className="topnavbar__width-control" >
-            <NavbarItem id="logo"> <div className="comp__logo"><h1>Product Messaih</h1></div> </NavbarItem>
+            <NavbarItem id="logo"> <div className="comp__logo"><h1>Jerry Jose</h1></div> </NavbarItem>
         {/* <NavbarItem id="search"> <SearchInput placeholdercomp="Search SilverVault" onFormSubmit={e=>e.preventDefault()}/> </NavbarItem> */}
-                <NavbarItem id="menu"><MenuButtonHolder screen="menu__desktop" icons={iconsdesk}/><div className="comp__logo" id="menu__button"></div></NavbarItem>
+                <NavbarItem id="menu"><MenuButtonHolder screen="menu__desktop" icons={iconsdesk}/></NavbarItem>
                 <MenuButtonHolder screen="menu__phone" icons={iconsphone}/>
           </div>
 

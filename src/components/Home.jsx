@@ -31,7 +31,53 @@ const infos = [{
 }]
 
 
+const recentProjects = [{
+  imageClass: "livereaction",
+  projectName: "Live Reaction",
+  projectDesc: "Live reaction and cursor tracking for interactive sessions. Implemented with NextJS 14",
+  gitlink: "https://github.com/babuyaga/livereaction",
+  projectlink: "https://livereaction.vercel.app/",
+  linkDesc: "Github Repository"
+},
 
+{
+  imageClass: "banking",
+  projectName: "Banking app",
+  projectDesc: "Budgeting and banking app that lets you transfer money to any account. Built on NextJS 14",
+  gitlink: "https://github.com/babuyaga/banking",
+  projectlink: "https://banking-szfv.vercel.app/",
+  linkDesc: "Github Repository"
+},
+{
+  imageClass: "portfolio",
+  projectName: "Personal Portfolio Website",
+  projectDesc: "A portfolio website showcasing personal projects and skills. Built with React and NextJS",
+  gitlink: "https://github.com/babuyaga/portfolio",
+  projectlink: "https://portfolio-ec70twh3l-babuyagas-projects.vercel.app/",
+  linkDesc: "Github Repository"
+}];
+
+
+const OpenLinkedInButton = () => {
+  const openLink = () => {
+    window.open('https://www.linkedin.com/in/jerry-jose-055841159/', '_blank'); // Opens the link in a new tab
+  };
+  openLink();
+}
+
+const OpenEmail = () => {
+  const openLink = () => {
+    window.open('mailto:jerryjose097@gmail.com', '_blank'); // Opens the link in a new tab
+  };
+  openLink();
+}
+
+const OpenInsta = () => {
+  const openLink = () => {
+    window.open('https://www.instagram.com/_jerry_jose/', '_blank'); // Opens the link in a new tab
+  };
+  openLink();
+}
 
   const handleScroll = () => {
 
@@ -54,12 +100,12 @@ const infos = [{
                 <span className="heading__1"> innovative products<span className="blinking-span">.</span> </span></div>
               <div className="text__holder"><span className="heading__2">{/*appinfo.brandname*/} Transform your ideas into
               </span><span className="heading__2">real-life solutions</span></div>
-              <div className="button__holder"><button id="explore__button" className="home__button">Email</button><button id="invite__button" className="home__button">LinkedIn</button></div>
+              <div className="button__holder"><button id="explore__button" className="home__button" onClick={OpenEmail}>Email</button><button id="invite__button" onClick={OpenLinkedInButton} className="home__button">LinkedIn</button></div>
 
-              <div className="text__holder" id="section__bottom_text">
-                <span onClick={() => { console.log("Hello") }} className="learn__more">Let's talk{/*appinfo.brandname*/} </span>
+              <button onClick={OpenInsta} className="text__holder instabutton" id="section__bottom_text">
+                <span className="learn__more">Let's talk{/*appinfo.brandname*/} </span>
                 <div className="arrow-right--learn-more"></div>
-              </div>
+              </button>
             </Partition>
             <Partition partid="square__2" direction="row" bgcolor="transparent">
               <FeaturedCard />
@@ -70,7 +116,17 @@ const infos = [{
 
 
           <SectionComp className="all__section" idnm="section__2">  <div className="text__holder"><span className="heading__2">Top Projects</span></div></SectionComp>
-          <SectionComp className="all__section" idnm="section__3"><SwiperComp><RecentCard /><RecentCard imageClass="banking" projectName="Banking app" projectDesc="Budgeting and banking app that let's you transfer money to any account. Built on NextJS 14" /><RecentCard /></SwiperComp></SectionComp>
+          <SectionComp className="all__section" idnm="section__3"><SwiperComp>{recentProjects.map((project, index) => (
+        <RecentCard
+          key={index}
+          imageClass={project.imageClass}
+          projectName={project.projectName}
+          projectDesc={project.projectDesc}
+          gitlink={project.gitlink}
+          linkDesc={project.linkDesc}
+          projectlink={project.projectlink}
+        />
+      ))}</SwiperComp></SectionComp>
 
 
           <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Blog posts</span> {/*<div className="heading__2" id="drop_text"><span>| last 30 days</span></div>*/}</div></SectionComp>
@@ -92,7 +148,7 @@ const infos = [{
             <Partition direction="row" partid="ranking__partition" bgcolor="transparent">  <div className="button__holder"><button id="explore__button" className="home__button">View All</button></div></Partition>
           </SectionComp>
 
-          {/* <SectionComp className="all__section" idnm="section__7"> <div className="text__holder" id="top__collection"><span className="heading__2">Trending in</span> <div className="heading__2" id="drop_text"><span>all categories</span></div></div></SectionComp>
+          {/* Do not uncomment <SectionComp className="all__section" idnm="section__7"> <div className="text__holder" id="top__collection"><span className="heading__2">Trending in</span> <div className="heading__2" id="drop_text"><span>all categories</span></div></div></SectionComp>
     <SectionComp className="all__section" idnm="section__8">
         <SwiperComp sperV="4">
         <CardHolder><TrendCard/><TrendCard/></CardHolder>
@@ -138,7 +194,7 @@ const infos = [{
 
       <footer>
         <SectionComp className="all__section" idnm="section__17"></SectionComp>
-        <SectionComp className="all__section" idnm="section__18">
+        {/* Do not uncomment <SectionComp className="all__section" idnm="section__18">
           <div className="footer__width_control">
             <Partition direction="column" partid="footer__1" bgcolor="transparent">
               <span className="mail__text" id="mail__text_title">Stay in the loop</span>
@@ -153,21 +209,7 @@ const infos = [{
           </div>
 
         </SectionComp>
-        <SectionComp className="all__section" idnm="section__18">
-          <div className="footer__width_control">
-            <Partition direction="column" partid="footer__1" bgcolor="transparent">
-              <span className="mail__text" id="mail__text_title">Stay in the loop</span>
-              <span className="mail__text">Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips on getting more from SilverVault</span>
-              <form className="mailing__list_form"><input type="email" placeholder="Your email address" className="mailing__list_input"></input><button className="home__button" id="mailing__list_button">Join</button></form>
-
-            </Partition>
-            <Partition direction="column" partid="footer__2" bgcolor="transparent">
-              <span className="mail__text" id="mail__text_title">Join our community</span>
-              <div className="community__links_holder"></div>
-            </Partition>
-          </div>
-
-        </SectionComp>
+        */}
       </footer>
     </div>
 

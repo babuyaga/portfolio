@@ -232,6 +232,7 @@ transition:all 1s ease-in;
   font-size: 1.1rem;
   cursor: pointer;
   margin: auto 0;
+  color:white;
 }
 
 .button__holder {
@@ -288,6 +289,10 @@ background-color:#000000ab;
   background-color:#ffffff;
   color:#000000;
   border-left:15px solid #ffffff;
+}
+
+#section__bottom_text:active .learn__more{
+  color:white!important;
 }
 
 
