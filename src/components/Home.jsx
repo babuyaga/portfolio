@@ -128,28 +128,20 @@ const OpenInsta = () => {
         />
       ))}</SwiperComp></SectionComp>
 
-
-          <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Blog posts</span> {/*<div className="heading__2" id="drop_text"><span>| last 30 days</span></div>*/}</div></SectionComp>
-          <SectionComp className="all__section" idnm="section__5">
-            {/*  <Partition direction="column" partid="rank__1" bgcolor="transparent">
-                <RankCard /><RankCard/>    <RankCard/><RankCard/>    <RankCard/>
-            </Partition>
-            <Partition direction="column" partid="rank__2" bgcolor="transparent">
-                    <RankCard/><RankCard/>    <RankCard/><RankCard/>    <RankCard/>
-            </Partition>
-            <Partition direction="column" partid="rank__3" bgcolor="transparent">
-                    <RankCard/><RankCard/>    <RankCard/><RankCard/>    <RankCard/>
-            </Partition> */}
+{/* 
+          <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Blog posts</span> <div className="heading__2" id="drop_text"><span>| last 30 days</span></div></div></SectionComp> */}
+          {/* <SectionComp className="all__section" idnm="section__5">
+       
 
             <RankHolder></RankHolder>
-          </SectionComp>
+          </SectionComp> */}
 
-          <SectionComp className="all__section" idnm="section__6">
+          {/* <SectionComp className="all__section" idnm="section__6">
             <Partition direction="row" partid="ranking__partition" bgcolor="transparent">  <div className="button__holder"><button id="explore__button" className="home__button">View All</button></div></Partition>
-          </SectionComp>
+          </SectionComp> */}
 
-          {/* Do not uncomment <SectionComp className="all__section" idnm="section__7"> <div className="text__holder" id="top__collection"><span className="heading__2">Trending in</span> <div className="heading__2" id="drop_text"><span>all categories</span></div></div></SectionComp>
-    <SectionComp className="all__section" idnm="section__8">
+        {/* <SectionComp className="all__section" idnm="section__7"> <div className="text__holder" id="top__collection"><span className="heading__2">Trending in</span> <div className="heading__2" id="drop_text"><span>all categories</span></div></div></SectionComp> */}
+    {/* <SectionComp className="all__section" idnm="section__8">
         <SwiperComp sperV="4">
         <CardHolder><TrendCard/><TrendCard/></CardHolder>
         <CardHolder><TrendCard/><TrendCard/></CardHolder>
@@ -158,15 +150,15 @@ const OpenInsta = () => {
         </SwiperComp>
     </SectionComp> */}
 
-          <SectionComp className="all__section" idnm="section__9"> <div className="text__holder" id="top__collection"><span className="heading__2">Guiding Your Digital Path</span> </div></SectionComp>
+          {/* <SectionComp className="all__section" idnm="section__9"> <div className="text__holder" id="top__collection"><span className="heading__2">Guiding Your Digital Path</span> </div></SectionComp>
           <SectionComp className="all__section" idnm="section__10">
            {infos.map((info) => (
     <InfoCard key={info.id} partId={info.partId} text={info.text} title={info.title} />
 ))
 }
             
-          </SectionComp>
-
+          </SectionComp> */}
+{/* 
           <SectionComp className="all__section" idnm="section__11"> <div className="text__holder" id="top__collection"><span className="heading__2">Case Studies</span></div></SectionComp>
           <SectionComp className="all__section" idnm="section__12"><SwiperComp><ResourceCard /><ResourceCard /><ResourceCard /></SwiperComp></SectionComp>
 
@@ -182,7 +174,7 @@ const OpenInsta = () => {
             <Partition direction="column" partid="rank__3" bgcolor="transparent">
               <CategoryCard />
             </Partition>
-          </SectionComp>
+          </SectionComp> */}
 
 
         </div>
@@ -191,10 +183,10 @@ const OpenInsta = () => {
       </div>
 
 
-
+{/* 
       <footer>
         <SectionComp className="all__section" idnm="section__17"></SectionComp>
-        {/* Do not uncomment <SectionComp className="all__section" idnm="section__18">
+  <SectionComp className="all__section" idnm="section__18">
           <div className="footer__width_control">
             <Partition direction="column" partid="footer__1" bgcolor="transparent">
               <span className="mail__text" id="mail__text_title">Stay in the loop</span>
@@ -209,8 +201,8 @@ const OpenInsta = () => {
           </div>
 
         </SectionComp>
-        */}
-      </footer>
+        
+      </footer> */}
     </div>
 
   );
