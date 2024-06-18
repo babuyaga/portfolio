@@ -12,12 +12,71 @@ html {
   /* Firefox */
 }
 
+#bigbasket-case{
+  background-image: url("./icons/bigbasket_case.png");
+
+}
+
+#duo-case{
+  background-image: url("./icons/duolingo_case.png");
+}
+
+#flipkart-logo{
+  background-image:url("./icons/flipkart.png");
+}
+
+
+#byjus-logo{
+  background-image:url("./icons/byjus.png");
+  background-size:70%;
+}
+
+#streak-logo{
+  background-image:url("./icons/streak(1).png");
+  background-size:80%;
+}
+
+
+#consulting{
+  background-image: url("./icons/consulting.png");
+}
+
+#strategy{
+  background-image: url("./icons/strategy.png");
+}
+
+#implementation{
+  background-image: url("./icons/implementation.png");
+}
+
+#development{
+  background-image: url("./icons/development.png");
+}
+
+
+
+#instagram{
+  background-image: url("./icons/instagram.png");
+}
+
+#linkedin{
+  background-image: url("./icons/linkedin.png");
+}
+
+#threads{
+  background-image: url("./icons/threads.png");
+}
+
+#xicon{
+  background-image: url("./icons/x.png");
+}
+
 
 
 body {
   margin: 0;
   background-color: $background-top;
-  background-image: linear-gradient(to bottom, black, black, black, $section-3-bg);
+  background-image: linear-gradient(to bottom, black, black, black, #00000000);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,7 +116,7 @@ a {
   display: flex;
   height: fit-content;
   padding-bottom: 30px;
-  background-image: linear-gradient(to bottom, transparent, transparent, $search-button-bg);
+
 }
 
 .app__body {
@@ -138,19 +197,22 @@ transition:all 1s ease-in;
 #section__3 {
   max-width: 99vw !important;
   padding: 0 20px;
-  background-color: $section-3-bg;
+  background-image:linear-gradient(to bottom, transparent, black);
+  margin-bottom:0!important;
 }
 
 #section__4 {
   @extend .section__title;
-  background-color: $section-4-bg;
+  background-image:linear-gradient(to bottom, black , black);
+  padding: 70px 20px 30px 20px;
 }
 
 #section__5 {
   max-width: 99vw !important;
   padding: 0 20px;
-  background-color: $section-5-bg;
+  background-image:linear-gradient(to bottom, black, black , black);
   gap: 20px;
+  padding-bottom:20px
 }
 
 #section__6 {
@@ -168,8 +230,9 @@ transition:all 1s ease-in;
 
 
 #section__8 {
-  @extend #section__3;
-  margin: 0 0 20px 0;
+  display: flex !important;
+  box-sizing: border-box;
+  max-width: 1536px !important;
 }
 
 #section__9 {
@@ -190,7 +253,7 @@ transition:all 1s ease-in;
 }
 
 #section__17 {
-  background-color: $section-7-bg;
+  background-color: transparent;
   padding: 40px;
 }
 
@@ -324,6 +387,7 @@ background-color:#000000ab;
   display: flex;
   flex-direction: column;
   gap: 25px;
+  flex-wrap:wrap;
 }
 
 #footer__1 {
@@ -334,58 +398,14 @@ background-color:#000000ab;
   @extend #footer__1;
 }
 
-.mail__text {
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-#mail__text_title {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-
-
-.mailing__list_form {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.mailing__list_input {
-  width: 200px;
-  border-radius: 3px;
-  outline: none;
-  border: none;
-  box-sizing: border-box;
-  padding: 0 20px;
-  font-size: 1rem;
-}
-
-#mailing__list_button {
-  outline: none;
-  width: 150px !important;
-  box-sizing: border-box;
-  padding: 0 !important;
-  border: none;
-  font-size: 1.2rem;
-  font-weight: normal;
-  background-color: $mailing-list-button-bg;
-}
-
-#mailing__list_button:hover {
-  background-color: $mailing-list-button-hov;
-}
-
-.mailing__list_input::placeholder {
-  font-size: 1rem;
-}
-
 .community__links_holder {
   display: block;
-  width: 200px;
+width:fit-content;
   height: 75px;
-  background-color: $community-links-holder-bg;
   margin: auto;
+  display:flex;
+  justify-content: flex-start;
+  gap:60px;
 }
 
 footer {
@@ -404,6 +424,28 @@ footer {
   filter: invert(95%) sepia(32%) saturate(0%) hue-rotate(280deg) brightness(112%) contrast(106%);
 }
 
+
+
+.socials__icon{
+  display:block;
+  width:55px;
+  height:55px;
+border:1px solid rgb(141, 141, 141);
+  background-repeat:no-repeat;
+  background-position: center;
+  margin:auto;
+  background-size:80%;
+  filter:invert(100);
+  }
+
+  .socials__icon:hover{
+    cursor:pointer;
+  }
+  
+
+
+ 
+
 //phone-end
 
 @media only screen and (min-width: 900px) and (max-width:1200px) {}
@@ -411,6 +453,7 @@ footer {
 
 
 @media only screen and (min-width: 900px) {
+  
   .all__section {
     display: flex;
     flex-direction: row;
@@ -442,7 +485,7 @@ footer {
 
   #section__5 {
     display: flex !important;
-    padding: 0px 120px 0px 120px !important;
+    padding: 0px 120px 20px 120px !important;
     box-sizing: border-box;
     max-width: 1536px !important;
     gap: 0px !important;
@@ -465,13 +508,12 @@ footer {
 
 
   .footer__width_control {
-    width: 1536px;
     border-radius: 0px;
     margin: auto;
     box-sizing: border-box;
-    padding: 5px 120px 30px 120px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     border-bottom: $section-8-border-bottom;
   }
 
@@ -516,19 +558,6 @@ footer {
     flex-direction: row !important;
   }
 
-  .mail__text {
-    text-align: left;
-  }
-
-  #mail__text_title {
-    font-size: 1.6rem;
-  }
-
-
-  .mailing__list_input {
-    flex-grow: 1;
-  }
-
   #footer__1 {
     padding: 20px 100px 20px 20px;
     gap: 25px;
@@ -537,8 +566,8 @@ footer {
   #footer__2 {}
 
   .community__links_holder {
-    width: 500px;
     margin: auto;
+    display:flex;
   }
 
 

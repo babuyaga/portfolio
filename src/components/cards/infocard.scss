@@ -6,28 +6,32 @@
   gap:20px;
   padding:20px 20px 30px 20px;
 
-
   a{
     color:$drop-text-bg;
   }
 }
 .info__text{
-  text-align:center;
+  text-align:left;
   font-size:1.2rem;
-  padding:0 50px
+  width:200px;
+  margin:auto;
 }
 
 .info__title{
-  text-align:center;
+  text-align:left;
   font-weight:bold;
+
 }
 
 .info__card_icon{
 display:block;
 width:55px;
 height:55px;
-background-color:red;
+background-color:white;
+background-repeat:no-repeat;
 margin:auto;
+background-size:80%;
+filter:invert(100);
 }
 
 
@@ -39,7 +43,7 @@ margin:auto;
     flex-direction:column;
     gap:20px;
     padding:30px 20px 40px 20px;
-  border:1px solid #ffffff06;
+    margin-bottom:auto;
   
     a{
       color:$drop-text-bg;

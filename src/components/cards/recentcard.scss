@@ -16,7 +16,7 @@
 }
 .recent__card:hover{
   z-index:3;
-  cursor: pointer;
+
 }
 .recent__card_img{
 width:100%;
@@ -26,7 +26,9 @@ flex-grow:1;
 background-color:white;
 border-radius:inherit;
 }
-
+.creator__logo_holder:hover{
+  cursor:pointer;
+}
 
 .creator__logo_holder{
   padding:10px 10px;
@@ -105,6 +107,9 @@ border-radius:3px;
 font-weight:bold;
 }
 
+.recent__card_button:hover{
+  cursor:pointer;
+}
 .banking{
   background-image:url("../icons/banking.png");
 background-position:center;
@@ -146,6 +151,8 @@ background-repeat:no-repeat;
 .creator__name{
   left:90px;
 }
+
+
 }
 
 

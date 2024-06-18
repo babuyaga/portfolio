@@ -11,21 +11,19 @@ return(<div className="rank__card_heading">
 
 
     <div className="rankcard__headingnm_price">
-                {/* <span>#.</span>
-        <span>Collection</span> */}
+                <span></span>
+        <span>Title</span>
     </div>
 
 </div>
-{/* 
-<div className="rank__card_heading_price"><span >Volume</span></div>
 
-<div className="rank__card_heading_price"><span >Change</span></div>
-<div className="rank__card_heading_price" id="rank__card_heading_owner"><span >Owners</span></div>
-<div className="rank__card_heading_price" id="rank__card_heading_items"><span >Items</span></div> */}
 
-{/*  <div className="rank__card_heading_right">
+<div className="rank__card_heading_price" id="rank__card_heading_owner"><span ></span></div>
+<div className="rank__card_heading_price" id="rank__card_heading_items"><span >Topic</span></div>
+
+ <div className="rank__card_heading_right">
   </div>
-*/}
+
 </div>);
 }
 

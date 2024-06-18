@@ -48,7 +48,7 @@ export const config = {fullScreen: { enable: false },
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#6AFF7F",
+      color: "#ffffff",
       opacity: 0.4,
       width: 1
     },

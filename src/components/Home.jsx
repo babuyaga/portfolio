@@ -15,21 +15,23 @@ import ResourceCard from "./cards/ResourceCard.jsx";
 import CardHolder from "./cards/CardHolder.jsx";
 import RankHolder from "./containers/RankHolder.jsx";
 import ParticlesComp from "./background/ParticlesComp.jsx";
+import Form from "./forms/Form.jsx";
 
 
 function Home() {
 
 
 const infos = [{
-  title:"Product Management Consulting",text:"Expertise in product strategy, roadmapping, and lifecycle management.",partId:"info__part_1"
+  title:"Product Management Consulting",text:"Expertise in product strategy, roadmapping, lifecycle management.",partId:"consulting"
 },{
-  title:"Market Research & Strategy Development",text:"Conducting market analysis and developing strategic plans.",partId:"info__part_2"
+  title:"Market Research & Strategy Development",text:"Conducting market analysis and developing strategic plans.",partId:"strategy"
 },{
-  title:"SaaS Implementation & Onboarding",text:"Ensuring smooth SaaS product transitions from sales to adoption.",partId:"info__part_3"
+  title:"SaaS Implementation & Onboarding",text:"Ensuring smooth SaaS product transitions from sales to adoption.",partId:"implementation"
 },{
-  title:"Fullstack Web Development with NextJS",text:"Building scalable web applications with NextJS for high performance.",partId:"info__part_4"
+  title:"Fullstack Development",text:"Building scalable web applications with NextJS, ReactJS, Node and Python.",partId:"development"
 }]
 
+const socials = [{app:"Instagram",icon:"instagram",link:"https://www.instagram.com/_jerry_jose/"},{app:"LinkedIn",icon:"linkedin",link:"https://www.linkedin.com/in/jerry-jose-055841159/"},{app:"X",icon:"xicon",link:"https://x.com/orupaavampayyan"},{app:"Threads",icon:"threads",link:"https://www.threads.net/@_jerry_jose"}]
 
 const recentProjects = [{
   imageClass: "livereaction",
@@ -79,10 +81,21 @@ const OpenInsta = () => {
   openLink();
 }
 
-  const handleScroll = () => {
 
-  }
+const OpenBlog = () => {
+  const openLink = () => {
+    window.open('https://adammichaeljose.medium.com/', '_blank'); // Opens the link in a new tab
+  };
+  openLink();
+}
 
+
+const openIt=(link)=>{
+  const openLink = () => {
+    window.open(link, '_blank'); // Opens the link in a new tab
+  };
+  openLink();
+}
 
 
   return (
@@ -95,11 +108,23 @@ const OpenInsta = () => {
           <SectionComp className="all__section section__1" idnm="section__1">
             <Partition direction="column" partid="square__1" bgcolor="transparent">
 
-              <div className="text__holder"><span className="heading__1">Develop, <span className="text-color-green"><span className="hover_letter_holder"><span className="hover_letter">l</span><span className="hover_letter">a</span><span className="hover_letter">u</span><span className="hover_letter">n</span><span className="hover_letter">c</span><span className="hover_letter">h</span></span>,</span> and optimize
+              <div className="text__holder">
+                <span className="heading__1">Develop, <span className="text-color-green"><span className="hover_letter_holder"><span className="hover_letter">l</span>
+                <span className="hover_letter">a</span>
+                <span className="hover_letter">u</span>
+                <span className="hover_letter">n</span>
+                <span className="hover_letter">c</span>
+                <span className="hover_letter">h</span>
+                </span>,</span> 
+                and optimize
               </span>
-                <span className="heading__1"> innovative products<span className="blinking-span">.</span> </span></div>
-              <div className="text__holder"><span className="heading__2">{/*appinfo.brandname*/} Transform your ideas into
-              </span><span className="heading__2">real-life solutions</span></div>
+                <span className="heading__1"> innovative products
+                  <span className="blinking-span">.</span> 
+                  </span>
+                </div>
+              <div className="text__holder">
+                <span className="heading__2">{/*appinfo.brandname*/} Transform your ideas into
+                </span><span className="heading__2">real-life solutions</span></div>
               <div className="button__holder"><button id="explore__button" className="home__button" onClick={OpenEmail}>Email</button><button id="invite__button" onClick={OpenLinkedInButton} className="home__button">LinkedIn</button></div>
 
               <button onClick={OpenInsta} className="text__holder instabutton" id="section__bottom_text">
@@ -115,7 +140,7 @@ const OpenInsta = () => {
 
 
 
-          <SectionComp className="all__section" idnm="section__2">  <div className="text__holder"><span className="heading__2">Top Projects</span></div></SectionComp>
+          <SectionComp className="all__section" idnm="section__2">  <div className="text__holder"><span className="heading__2">Recent Builds</span></div></SectionComp>
           <SectionComp className="all__section" idnm="section__3"><SwiperComp>{recentProjects.map((project, index) => (
         <RecentCard
           key={index}
@@ -127,54 +152,55 @@ const OpenInsta = () => {
           projectlink={project.projectlink}
         />
       ))}</SwiperComp></SectionComp>
+      
+     
 
-{/* 
-          <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Blog posts</span> <div className="heading__2" id="drop_text"><span>| last 30 days</span></div></div></SectionComp> */}
-          {/* <SectionComp className="all__section" idnm="section__5">
-       
-
+          <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Blog posts</span> <div className="heading__2" id="drop_text"><span></span></div></div></SectionComp> 
+          <SectionComp className="all__section" idnm="section__5">
             <RankHolder></RankHolder>
-          </SectionComp> */}
+          </SectionComp>
 
-          {/* <SectionComp className="all__section" idnm="section__6">
-            <Partition direction="row" partid="ranking__partition" bgcolor="transparent">  <div className="button__holder"><button id="explore__button" className="home__button">View All</button></div></Partition>
-          </SectionComp> */}
+          <SectionComp className="all__section" idnm="section__6">
+            <Partition direction="row" partid="ranking__partition" bgcolor="transparent">  <div className="button__holder"><button id="explore__button" className="home__button" onClick={OpenBlog}>View All</button></div></Partition>
+          </SectionComp>
 
-        {/* <SectionComp className="all__section" idnm="section__7"> <div className="text__holder" id="top__collection"><span className="heading__2">Trending in</span> <div className="heading__2" id="drop_text"><span>all categories</span></div></div></SectionComp> */}
-    {/* <SectionComp className="all__section" idnm="section__8">
+        <SectionComp className="all__section" idnm="section__7"> <div className="text__holder" id="top__collection"><span className="heading__2">Product Cases</span>
+         <div className="heading__2" id="drop_text">
+          {/* <span>all categories</span> */}
+          </div></div></SectionComp>
+    <SectionComp className="all__section" idnm="section__8">
         <SwiperComp sperV="4">
-        <CardHolder><TrendCard/><TrendCard/></CardHolder>
-        <CardHolder><TrendCard/><TrendCard/></CardHolder>
-        <CardHolder><TrendCard/><TrendCard/></CardHolder>
-        <CardHolder><TrendCard/><TrendCard/></CardHolder>
+        <CardHolder><TrendCard backgroundId={"bigbasket-case"} link={"https://docs.google.com/presentation/d/1cO4T6tEFY6t-BjhdYneDfvkdR1CFYNHCk-ngFCa2ZCU/edit?usp=sharing"}/></CardHolder>
+        <CardHolder><TrendCard backgroundId={"duo-case"} link={"https://docs.google.com/presentation/d/1UMTykt3pKEh-WNVOyyqnXaokURfTBVGOiMwbWDfA9Fw/edit?usp=sharing"}/></CardHolder>
+        <CardHolder><TrendCard/></CardHolder>
         </SwiperComp>
-    </SectionComp> */}
+    </SectionComp>
 
-          {/* <SectionComp className="all__section" idnm="section__9"> <div className="text__holder" id="top__collection"><span className="heading__2">Guiding Your Digital Path</span> </div></SectionComp>
+          <SectionComp className="all__section" idnm="section__9"> <div className="text__holder" id="top__collection"><span className="heading__2">Guiding Your Digital Path</span> </div></SectionComp>
           <SectionComp className="all__section" idnm="section__10">
            {infos.map((info) => (
     <InfoCard key={info.id} partId={info.partId} text={info.text} title={info.title} />
 ))
 }
             
-          </SectionComp> */}
-{/* 
-          <SectionComp className="all__section" idnm="section__11"> <div className="text__holder" id="top__collection"><span className="heading__2">Case Studies</span></div></SectionComp>
+          </SectionComp>
+
+          <SectionComp className="all__section" idnm="section__11"> <div className="text__holder" id="top__collection"><span className="heading__2">Business Cases</span></div></SectionComp>
           <SectionComp className="all__section" idnm="section__12"><SwiperComp><ResourceCard /><ResourceCard /><ResourceCard /></SwiperComp></SectionComp>
 
 
-          <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Places I've worked at</span></div></SectionComp>
+          <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Brands I've Worked For</span></div></SectionComp>
           <SectionComp className="all__section" idnm="section__5">
             <Partition direction="column" partid="rank__1" bgcolor="transparent">
-              <CategoryCard />
+              <CategoryCard imageid={"flipkart-logo"} />
             </Partition>
             <Partition direction="column" partid="rank__2" bgcolor="transparent">
-              <CategoryCard />
+              <CategoryCard imageid={"byjus-logo"} />
             </Partition>
             <Partition direction="column" partid="rank__3" bgcolor="transparent">
-              <CategoryCard />
+              <CategoryCard imageid={"streak-logo"} />
             </Partition>
-          </SectionComp> */}
+          </SectionComp>
 
 
         </div>
@@ -183,26 +209,27 @@ const OpenInsta = () => {
       </div>
 
 
-{/* 
+{ 
       <footer>
         <SectionComp className="all__section" idnm="section__17"></SectionComp>
   <SectionComp className="all__section" idnm="section__18">
           <div className="footer__width_control">
             <Partition direction="column" partid="footer__1" bgcolor="transparent">
-              <span className="mail__text" id="mail__text_title">Stay in the loop</span>
-              <span className="mail__text">Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips on getting more from {appinfo.brandname}</span>
-              <form className="mailing__list_form"><input type="email" placeholder="Your email address" className="mailing__list_input"></input><button className="home__button" id="mailing__list_button">Join</button></form>
-
+              <Form appinfo={appinfo}/>
             </Partition>
             <Partition direction="column" partid="footer__2" bgcolor="transparent">
-              <span className="mail__text" id="mail__text_title">Join our community</span>
-              <div className="community__links_holder"></div>
+              <span className="mail__text" id="mail__text_title">Here's my social media:</span>
+              <div className="community__links_holder">
+
+{socials.map((social)=>(<div className="socials__icon" id={social.icon} onClick={()=>{openIt(social.link)}}></div>))}
+
+              </div>
             </Partition>
           </div>
 
         </SectionComp>
         
-      </footer> */}
+      </footer>}
     </div>
 
   );

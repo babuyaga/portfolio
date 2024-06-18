@@ -40,9 +40,11 @@ cursor:pointer;
 display:flex;
 flex-direction:row;
 align-items: center;
-justify-content: center;
+justify-content: flex-start;
 gap:10px;
 flex-basis:250px;
+flex-grow:1;
+
 }
 .rank__card_right{
   font-size:1.2rem;
@@ -56,13 +58,12 @@ flex-basis:250px;
     border-radius:3px;
 }
 
-.collection__icon{
-  display:block;
-  width:50px;
-  height:50px;
-  border-radius:30px;
-  background-color:$icon-bg-color;
+.collection__icon ul{
+margin:0;
 }
+
+
+
 .rankcard__nm_price{
   display:flex;
   flex-direction:column;
@@ -77,14 +78,26 @@ align-items: center;
   gap:4px;
   flex-basis:150px;
   justify-content: center;
-}
 
+}
+#subject{
+ 
+  flex-grow:1;
+  justify-content: flex-start;
+}
 #red__text{
   color:#CA351F;
 }
 
+.buffer{
+flex-grow:1;
+max-width:10%;
+}
+
 #green__text{
   color:#15B292;
+  flex-grow:2;
+  max-width:fit-content;
 }
 
 .rank__card_symb{
@@ -102,7 +115,10 @@ filter: invert(1);
 
 #rank__card_heading_owner{
   flex-grow:1;
-  color:#ffffffab
+  color:#ffffffab;
+justify-content: flex-start;
+padding-left:40px;
+box-sizing: border-box;
 }
 @media only screen and (min-width: 900px) and (max-width:1200px) {
 
@@ -121,12 +137,16 @@ padding:20px;
 
 .rank__card_left{
   gap:20px;
-  flex-basis:350px;
-  justify-content: flex-start;
+ flex-grow:1;
+ 
 }
 
 #rankcard_rank{
   display:flex;
+}
+
+.buffer{
+  max-width:30%;
 }
 }
 
