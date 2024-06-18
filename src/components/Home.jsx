@@ -185,8 +185,8 @@ const openIt=(link)=>{
             
           </SectionComp>
 
-          <SectionComp className="all__section" idnm="section__11"> <div className="text__holder" id="top__collection"><span className="heading__2">Business Cases</span></div></SectionComp>
-          <SectionComp className="all__section" idnm="section__12"><SwiperComp><ResourceCard /><ResourceCard /><ResourceCard /></SwiperComp></SectionComp>
+          {/* <SectionComp className="all__section" idnm="section__11"> <div className="text__holder" id="top__collection"><span className="heading__2">Business Cases</span></div></SectionComp>
+          <SectionComp className="all__section" idnm="section__12"><SwiperComp><ResourceCard /><ResourceCard /><ResourceCard /></SwiperComp></SectionComp> */}
 
 
           <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Brands I've Worked For</span></div></SectionComp>

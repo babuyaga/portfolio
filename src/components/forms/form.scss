@@ -12,7 +12,7 @@
   
   .mailing__list_form {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 15px;
   }
   
@@ -51,7 +51,13 @@
   
 
 @media only screen and (min-width: 900px) {
-  
+  .form-width{
+    max-width:50%;
+    display:flex;
+    flex-direction: column;
+gap:15px;
+justify-content: flex-start;
+}
     .mail__text {
       text-align: left;
     }
@@ -62,6 +68,6 @@
   
   
     .mailing__list_input {
-      flex-grow: 1;
+      width:400px;
     }
 }  

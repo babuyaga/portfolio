@@ -185,7 +185,7 @@ transition:all 1s ease-in;
 
 #section__1 {
   padding: 20px 20px 30px 20px !important;
-  background-color: $section-1-bg;
+  background-image:linear-gradient(to right,transparent,#00000068,transparent);
   background-size: cover;
 }
 
@@ -504,6 +504,7 @@ border:1px solid rgb(141, 141, 141);
   #section__18 {
     background-color: $section-8-bg;
     padding: 30px 120px;
+    display:flex;
   }
 
 
@@ -561,6 +562,8 @@ border:1px solid rgb(141, 141, 141);
   #footer__1 {
     padding: 20px 100px 20px 20px;
     gap: 25px;
+    max-width:40%;
+    margin:0 auto;
   }
 
   #footer__2 {}
