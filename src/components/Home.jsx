@@ -124,7 +124,7 @@ const openIt=(link)=>{
                 </div>
               <div className="text__holder">
                 <span className="heading__2">{/*appinfo.brandname*/} Transform your ideas into
-                </span><span className="heading__2">real-life solutions</span></div>
+                </span><span className="heading__2"> real-life solutions</span></div>
               <div className="button__holder"><button id="explore__button" className="home__button" onClick={OpenEmail}>Email</button><button id="invite__button" onClick={OpenLinkedInButton} className="home__button">LinkedIn</button></div>
 
               <button onClick={OpenInsta} className="text__holder instabutton" id="section__bottom_text">
