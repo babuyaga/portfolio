@@ -1,7 +1,7 @@
 @import "../theme-colors.scss";
 
 .category__card{
-  width:340px; //392
+  width:300px; //392
   height:247px;
   display:block;
   border:1px solid transparent;
@@ -27,7 +27,8 @@ background-position: center;
 
 @media only screen and (min-width: 900px){
 .category__card{
-
+  width:340px; //392
+  height:247px;
 }
 
 

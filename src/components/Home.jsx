@@ -176,7 +176,7 @@ const openIt=(link)=>{
         </SwiperComp>
     </SectionComp>
 
-          <SectionComp className="all__section" idnm="section__9"> <div className="text__holder" id="top__collection"><span className="heading__2">Guiding Your Digital Path</span> </div></SectionComp>
+          <SectionComp className="all__section" idnm="section__9"> <div className="text__holder" id="top__collection"><span className="heading__2">Things I Do</span> </div></SectionComp>
           <SectionComp className="all__section" idnm="section__10">
            {infos.map((info) => (
     <InfoCard key={info.id} partId={info.partId} text={info.text} title={info.title} />

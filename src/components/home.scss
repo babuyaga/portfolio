@@ -287,7 +287,8 @@ transition:all 1s ease-in;
 }
 
 .heading__2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-style: bold;
   margin: 0;
 }
 
@@ -441,7 +442,11 @@ border:1px solid rgb(141, 141, 141);
     cursor:pointer;
   }
   
-
+  #section__18 {
+    background-color: #ffffff1a;
+    border-top:5px solid #ffffffcb;
+padding-top:80px;
+  }
 
  
 
@@ -501,9 +506,9 @@ border:1px solid rgb(141, 141, 141);
   #section__17 {}
 
   #section__18 {
-    background-color: $section-8-bg;
-    padding: 30px 120px;
+    padding: 50px 120px;
     display:flex;
+    border-top:5px solid white;
   }
 
 
