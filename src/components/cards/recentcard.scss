@@ -28,6 +28,7 @@ border-radius:inherit;
 }
 .creator__logo_holder:hover{
   cursor:pointer;
+  color:white;
 }
 
 .creator__logo_holder{
@@ -45,12 +46,18 @@ visibility: visible;
 }
 
 .creator__logo{
-  background-color:black;
   width:40px;
   height:40px;
   border-radius:50px;
   align-items: center;
+  background-color:white;
   margin:10px;
+  border:1px solid white;
+  background-image:url(".././icons/github.png");
+  background-size:150%;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 .creator__name{
