@@ -122,12 +122,12 @@ const openIt=(link)=>{
                   <span className="blinking-span">.</span> 
                   </span>
                 </div>
-              <div className="text__holder">
+              <div className="text__holder2">
                 <span className="heading__2">{/*appinfo.brandname*/} Transform your ideas into
                 </span><span className="heading__2"> real-life solutions</span></div>
               <div className="button__holder"><button id="explore__button" className="home__button" onClick={OpenEmail}>Email</button><button id="invite__button" onClick={OpenLinkedInButton} className="home__button">LinkedIn</button></div>
 
-              <button onClick={OpenInsta} className="text__holder instabutton" id="section__bottom_text">
+              <button onClick={OpenInsta} className="instabutton" id="section__bottom_text">
                 <span className="learn__more">Let's talk{/*appinfo.brandname*/} </span>
                 <div className="arrow-right--learn-more"></div>
               </button>
@@ -155,7 +155,7 @@ const openIt=(link)=>{
       
      
 
-          <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Blog posts</span> <div className="heading__2" id="drop_text"><span></span></div></div></SectionComp> 
+          <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2b">Blog posts</span> <div className="heading__2" id="drop_text"><span></span></div></div></SectionComp> 
           <SectionComp className="all__section" idnm="section__5">
             <RankHolder></RankHolder>
           </SectionComp>
@@ -164,7 +164,7 @@ const openIt=(link)=>{
             <Partition direction="row" partid="ranking__partition" bgcolor="transparent">  <div className="button__holder"><button id="explore__button" className="home__button" onClick={OpenBlog}>View All</button></div></Partition>
           </SectionComp>
 
-        <SectionComp className="all__section" idnm="section__7"> <div className="text__holder" id="top__collection"><span className="heading__2">Product Cases</span>
+        <SectionComp className="all__section" idnm="section__7"> <div className="text__holder" id="top__collection"><span className="heading__2b">Product Cases</span>
          <div className="heading__2" id="drop_text">
           {/* <span>all categories</span> */}
           </div></div></SectionComp>
@@ -176,7 +176,7 @@ const openIt=(link)=>{
         </SwiperComp>
     </SectionComp>
 
-          <SectionComp className="all__section" idnm="section__9"> <div className="text__holder" id="top__collection"><span className="heading__2">Things I Do</span> </div></SectionComp>
+          <SectionComp className="all__section" idnm="section__9"> <div className="text__holder" id="top__collection"><span className="heading__2b">Things I Do</span> </div></SectionComp>
           <SectionComp className="all__section" idnm="section__10">
            {infos.map((info) => (
     <InfoCard key={info.id} partId={info.partId} text={info.text} title={info.title} />
@@ -189,7 +189,7 @@ const openIt=(link)=>{
           <SectionComp className="all__section" idnm="section__12"><SwiperComp><ResourceCard /><ResourceCard /><ResourceCard /></SwiperComp></SectionComp> */}
 
 
-          <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2">Brands I've Worked For</span></div></SectionComp>
+          <SectionComp className="all__section" idnm="section__4"> <div className="text__holder" id="top__collection"><span className="heading__2b">Brands I've Worked For</span></div></SectionComp>
           <SectionComp className="all__section" idnm="section__5">
             <Partition direction="column" partid="rank__1" bgcolor="transparent">
               <CategoryCard imageid={"flipkart-logo"} />

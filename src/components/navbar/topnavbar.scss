@@ -6,10 +6,17 @@
   width:100vw;
   height:fit-content;
   margin:auto;
+  opacity:$navbar-opacity;
 
-opacity:$navbar-opacity;
 position:fixed;
 z-index:100;
+box-shadow:0px 2px 10px #000000ab;
+
+
+
+background-image: radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px); /* For Safari support */
 }
 
 .topnavbar:hover{
@@ -59,7 +66,7 @@ height:48px;
 .comp__logo{
   width:fit-content;
   height:90%;
-  color:white;
+  color:#000000;
   display:flex;
   margin:auto auto auto 0;
 }
@@ -67,7 +74,7 @@ height:48px;
 .comp__logo h1{
   margin:0;
   font-size: 2rem;
-  border-left:5px solid rgba(0, 255, 136, 0.822);
+  border-left:5px solid #000000;
 padding:5px 10px;
 }
 @media only screen and (min-width: 900px) and (max-width:1200px) {
@@ -80,7 +87,7 @@ padding:5px 10px;
 
   .topnavbar{
     display:flex;
-    width:99vw;
+    width:100vw;
    box-sizing: border-box;
   }
 
@@ -108,7 +115,7 @@ padding:5px 10px;
   // background-image:url("../icons/logo.svg");
   // background-position:left;
   // background-size:cover;
-  color:white;
+  color:#000000;
   display:flex;
   margin:auto;
 
@@ -118,7 +125,7 @@ margin:auto 0;
 font-size:1.5rem;
 width:fit-content;
 // color:#6AFF7F;
-border-left:5px solid rgba(0, 255, 136, 0.822);
+
 padding:5px 10px;
 }
 #menu{

@@ -8,7 +8,7 @@ export const config = {fullScreen: { enable: false },
       }
     },
     color: {
-      value: "#6AFF7F"
+      value: "#000000"
     },
     shape: {
       type: "circle",
@@ -48,14 +48,14 @@ export const config = {fullScreen: { enable: false },
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#ffffff",
+      color: "#000000",
       opacity: 0.4,
       width: 1
     },
     move: {
       enable: true,
       speed: 1,
-      direction: "right",
+      direction: "top",
       random: false,
       straight: false,
       out_mode: "out",
@@ -84,7 +84,7 @@ export const config = {fullScreen: { enable: false },
       grab: {
         distance: 200,
         line_linked: {
-          opacity: 1
+          opacity: 0.5
         }
       },
       bubble: {

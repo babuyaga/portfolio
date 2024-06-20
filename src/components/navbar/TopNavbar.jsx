@@ -9,7 +9,7 @@ import "./topnavbar.scss";
 function TopNavbar(prop){
 
 
-return(<div className="topnavbar" style={{backgroundColor:"black"}}>
+return(<div className="topnavbar" style={{backgroundColor:"ffffff"}}>
           <div className="topnavbar__width-control" >
             <NavbarItem id="logo"> <div className="comp__logo"><h1>Jerry Jose</h1></div> </NavbarItem>
         {/* <NavbarItem id="search"> <SearchInput placeholdercomp="Search SilverVault" onFormSubmit={e=>e.preventDefault()}/> </NavbarItem> */}
