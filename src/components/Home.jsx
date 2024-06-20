@@ -140,7 +140,7 @@ const openIt=(link)=>{
 
 
 
-          <SectionComp className="all__section" idnm="section__2">  <div className="text__holder"><span className="heading__2">Recent Builds</span></div></SectionComp>
+          <SectionComp className="all__section" idnm="section__2">  <div className="text__holder"><span className="heading__2a">Recent Builds</span></div></SectionComp>
           <SectionComp className="all__section" idnm="section__3"><SwiperComp>{recentProjects.map((project, index) => (
         <RecentCard
           key={index}

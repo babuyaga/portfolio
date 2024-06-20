@@ -1,21 +1,30 @@
 @import '../theme-colors.scss';
 
-.featured__card{
+.featured__card-holder{
   display:block;
   width:96vh;
  height:400px;
   max-height:400px;
   margin:auto;
+border-radius: 15px;
+border:1px solid black;
+transition: box-shadow 0.6s;
+opacity:1;
+z-index: 1;
+backdrop-filter: invert(100%);
+overflow:hidden;
+// filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(338deg) brightness(91%) contrast(109%);
+}
+
+.featured__card{
+  z-index: 10;
+  width:100%;
+  height:100%;
 background-image:url('../icons/hero_image.png');
 background-size:contain;
 background-repeat: no-repeat;
-background-size:100%;
+background-size:140%;
 background-position: center;
-border-radius: 3px;
-transition: box-shadow 0.6s;
-opacity:1;
-z-index: -10;
-// filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(338deg) brightness(91%) contrast(109%);
 }
 
 .featured__card:hover{
@@ -28,15 +37,19 @@ z-index: -10;
 }
 
 @media only screen and (min-width: 900px){
-.featured__card{
+.featured__card-holder{
   width:550px;
   height:494px;
   max-width:550px;
   max-height:494px;
+  backdrop-filter: invert(0);
   // border-right:10px solid #6AFF7F;
   // border-left:10px solid #6AFF7F;
 }
-
+.featured__card{
+  background-size:105%;
+  background-position:70% 15%;
+}
 }
 
 @media only screen and (min-width: 1200px) {

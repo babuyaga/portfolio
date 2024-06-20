@@ -89,7 +89,7 @@ body { background-image: linear-gradient(to bottom, #f3f3f3,#f3f3f3,#f3f3f3, bla
 
 #tsparticles {
   position: absolute;
-  height: 725px;
+  height: 1300px;
   top: 0;
   left: 0;
   bottom: 0;
@@ -192,6 +192,7 @@ transition:all 1s ease-in;
 #section__2 {
   @extend .section__title;
   background-color: $section-2-bg;
+  padding:50px 20px 20px 20px;
 }
 
 #section__3 {
@@ -203,7 +204,7 @@ transition:all 1s ease-in;
 
 #section__4 {
   @extend .section__title;
-  padding: 70px 20px 30px 20px;
+  padding: 70px 20px 0px 20px;
 }
 
 #section__5 {
@@ -285,10 +286,14 @@ transition:all 1s ease-in;
   margin: 0;
 }
 
-.heading__2 {
+.heading__2 , .heading__2a {
   font-size: 1.6rem;
   font-style: bold;
   margin: 0;
+}
+
+.heading__2a, .heading__2b{
+  font-weight:600;
 }
 
 .heading__2b {
@@ -470,6 +475,9 @@ padding-top:80px;
 
 @media only screen and (min-width: 900px) {
   
+#tsparticles {
+ height: 725px;
+}
 body { 
   background-image: linear-gradient(to bottom, #f3f3f3,#f3f3f3, black,black, black, #00000000);
 }
