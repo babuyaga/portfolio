@@ -55,7 +55,7 @@ const recentProjects = [{
   projectName: "Personal Portfolio Website",
   projectDesc: "A portfolio website showcasing personal projects and skills. Built with React and NextJS",
   gitlink: "https://github.com/babuyaga/portfolio",
-  projectlink: "https://portfolio-ec70twh3l-babuyagas-projects.vercel.app/",
+  projectlink: "https://portfolio-sandy-five-47.vercel.app/",
   linkDesc: "Github Repository"
 }];
 
@@ -116,8 +116,9 @@ const openIt=(link)=>{
                 <span className="hover_letter">c</span>
                 <span className="hover_letter">h</span>
                 </span>,</span> 
-                and optimize
+               
               </span>
+              <span className="heading__1">and optimize</span>
                 <span className="heading__1"> innovative products
                   <span className="blinking-span">.</span> 
                   </span>
