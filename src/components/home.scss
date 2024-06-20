@@ -340,7 +340,7 @@ transition:all 1s ease-in;
   display: flex;
   flex-direction: row;
   gap: 20px;
-background-color:#000000ab;
+background-color:#000000;
   border: 1px solid #ffffffab;
   transition: all 0.2s ease-in-out;
   width: fit-content;
@@ -358,12 +358,11 @@ background-color:#000000ab;
 #section__bottom_text:active {
   box-shadow: none;
   background-color:#ffffff;
-  color:#000000;
   border-left:15px solid #ffffff;
 }
 
 #section__bottom_text:active .learn__more{
-  color:white!important;
+  color:black!important;
 }
 
 
