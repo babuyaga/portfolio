@@ -27,13 +27,15 @@
   width:100%;
   box-sizing: border-box;
   padding:20px 0px;
-  border-bottom:1px solid #ffffff1b;
+  border:1px solid #ffffff1b;
+  border-radius:5px;
   background-color:#ffffff06;
 font-size:0.7rem;
 font-weight:bolder;
 color:white;
 cursor:pointer;
 transition: all 0.2s;
+margin:10px 0px;
 }
 
 
@@ -92,9 +94,10 @@ align-items: center;
 }
 #green__text{
   color:black;
-  font-size: 8px;
-  flex-grow:2;
+  font-size: 0.4rem;
+  flex-grow:1;
   max-width:fit-content!important;
+  display: flex;
   padding:2px 5px;
   box-sizing: content-box;
   border-radius: 5px;;
