@@ -476,7 +476,8 @@ padding-top:80px;
 @media only screen and (min-width: 900px) {
   
 #tsparticles {
- height: 725px;
+ height: 725px; 
+ opacity: 0.7;
 }
 body { 
   background-image: linear-gradient(to bottom, #f3f3f3,#f3f3f3, black,black, black, #00000000);
