@@ -33,6 +33,7 @@ font-size:0.7rem;
 font-weight:bolder;
 color:white;
 cursor:pointer;
+transition: all 0.2s;
 }
 
 
@@ -52,15 +53,16 @@ flex-grow:1;
 }
 
 .rank__card:hover{
-  box-shadow: 0px 0px 10px $recent-card-bg;
+  background-color:#252525;
   z-index:2;
-  transition: box-shadow 0.2s;
+
     border-radius:3px;
 }
 
 .collection__icon ul{
 margin:0;
 padding-left:10px;
+display:none;
 }
 
 
@@ -133,10 +135,10 @@ box-sizing: border-box;
   .rank__holder{
     margin:10px 20px;
   }
-
+  .collection__icon ul{display:inline-block;}
 .rank__card{
   background-color:transparent;
-font-size:1rem;
+font-size:0.95rem;
 padding:20px;
 }
 
@@ -161,6 +163,7 @@ padding:20px;
   padding:2px 10px;
   border-radius: 5px;;
   background-color:white;
+  font-size:0.8rem;
 }
 
 
