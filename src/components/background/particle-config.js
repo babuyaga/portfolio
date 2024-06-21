@@ -1,7 +1,7 @@
 export const config = {fullScreen: { enable: false },
   particles: {
     number: {
-      value: 80,
+      value: 70,
       density: {
         enable: true,
         value_area: 800
@@ -26,7 +26,7 @@ export const config = {fullScreen: { enable: false },
       }
     },
     opacity: {
-      value: 0.5,
+      value: 0.8,
       random: false,
       anim: {
         enable: false,

@@ -109,23 +109,15 @@ const openIt=(link)=>{
             <Partition direction="column" partid="square__1" bgcolor="transparent">
 
               <div className="text__holder">
-                <span className="heading__1">Develop, <span className="text-color-green"><span className="hover_letter_holder"><span className="hover_letter">l</span>
-                <span className="hover_letter">a</span>
-                <span className="hover_letter">u</span>
-                <span className="hover_letter">n</span>
-                <span className="hover_letter">c</span>
-                <span className="hover_letter">h</span>
-                </span>,</span> 
-               
-              </span>
-              <span className="heading__1">and optimize</span>
-                <span className="heading__1"> innovative products
-                  <span className="blinking-span">.</span> 
+                <span className="heading__2a">0 to 1</span>
+              <span className="heading__1">Product Manager</span>
+                <span className="heading__1"> and Web Developer
+                  <span className="blinking-span"></span> 
                   </span>
                 </div>
               <div className="text__holder2">
-                <span className="heading__2">{/*appinfo.brandname*/} Transform your ideas into
-                </span><span className="heading__2"> real-life solutions</span></div>
+                <span className="heading__2">{/*appinfo.brandname*/} I build digital products, 
+                </span><span className="heading__2"> from ideation and launch.</span></div>
               <div className="button__holder"><button id="explore__button" className="home__button" onClick={OpenEmail}>Email</button><button id="invite__button" onClick={OpenLinkedInButton} className="home__button">LinkedIn</button></div>
 
               <button onClick={OpenInsta} className="instabutton" id="section__bottom_text">
