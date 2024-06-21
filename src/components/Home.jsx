@@ -117,7 +117,7 @@ const openIt=(link)=>{
                 </div>
               <div className="text__holder2">
                 <span className="heading__2">{/*appinfo.brandname*/} I build digital products, 
-                </span><span className="heading__2"> from ideation to launch.</span></div>
+                </span><span className="heading__2">driving them from idea to launch.</span></div>
               <div className="button__holder"><button id="explore__button" className="home__button" onClick={OpenEmail}>Email</button><button id="invite__button" onClick={OpenLinkedInButton} className="home__button">LinkedIn</button></div>
 
               <button onClick={OpenInsta} className="instabutton" id="section__bottom_text">
