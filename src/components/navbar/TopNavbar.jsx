@@ -7,16 +7,18 @@ import "./topnavbar.scss";
 
 
 function TopNavbar(prop){
-  const [header, setHeader] = useState({color:"#000000",borderLeft: "5px solid #000000"})
+  const [logotext, setLogotext] = useState({color:"#000000"})
+  const [logo,setLogo] = useState({border:"1px solid black",color:"black"});
 
 const listenScrollEvent = (event) => {
   if (window.scrollY < 1440) {
     console.log("scrolled");
-    return setHeader({color:"#000000",    borderLeft: "5px solid #000000"})
+     setLogotext({color:"#000000"})
+     setLogo({border:"1px solid black",color:"black"});
   } else if (window.scrollY > 1440) {
     console.log("scrolled back");
-    return setHeader({color:"#ffffff",    borderLeft: "5px solid #ffffff"})
-  
+    setLogotext({color:"#ffffff"})
+    setLogo({border:"1px solid white",color:"white"})
   } 
 }
 
@@ -29,7 +31,7 @@ useEffect(() => {
 
 return(<div className="topnavbar" style={{backgroundColor:"ffffff"}}>
           <div className="topnavbar__width-control" >
-            <NavbarItem id="logo"> <div className="comp__logo"><h1 style={header}>Jerry Jose</h1></div> </NavbarItem>
+            <NavbarItem id="logo"> <div className="comp__logo"><div className="logoholder" style={logotext}><div style={logo} className="logo_image"><h3>❒ I</h3></div><h1 >Jerry Jose</h1></div></div> </NavbarItem>
         {/* <NavbarItem id="search"> <SearchInput placeholdercomp="Search SilverVault" onFormSubmit={e=>e.preventDefault()}/> </NavbarItem> */}
                 {/* <NavbarItem id="menu"><MenuButtonHolder screen="menu__desktop" icons={iconsdesk}/></NavbarItem> */}
                 <MenuButtonHolder screen="menu__phone" icons={iconsphone}/>

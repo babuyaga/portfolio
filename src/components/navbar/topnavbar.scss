@@ -72,10 +72,34 @@ height:48px;
   align-items: center;
 }
 
+.logoholder{
+  display:flex;
+  flex-direction: row;
+}
+.logo_image{
+    width:40px;
+  height:40px;
+  border-radius: 3px;
+  margin:auto 5px;
+  background-size:60%;
+  background-position:center;
+  background-color: transparent;
+border:1px solid black;
+background-repeat:no-repeat;
+color:black;
+display:flex;
+}
+
+
+
+.logo_image h3{
+  margin:auto;
+}
+
+
 .comp__logo h1{
   margin:0;
   font-size: 2rem;
-  border-left:5px solid #000000;
 padding:0px 10px;
 }
 @media only screen and (min-width: 900px) and (max-width:1200px) {

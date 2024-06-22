@@ -134,7 +134,8 @@ const openIt=(link)=>{
 
 
           <SectionComp className="all__section" idnm="section__2">  <div className="text__holder"><span className="heading__2a">Recent Builds</span></div></SectionComp>
-          <SectionComp className="all__section" idnm="section__3"><SwiperComp>{recentProjects.map((project, index) => (
+          <SectionComp className="all__section" idnm="section__3"><SwiperComp>{
+          recentProjects.map((project, index) => (
         <RecentCard
           key={index}
           imageClass={project.imageClass}
@@ -165,7 +166,7 @@ const openIt=(link)=>{
         <SwiperComp sperV="4">
         <CardHolder><TrendCard backgroundId={"bigbasket-case"} link={"https://docs.google.com/presentation/d/1cO4T6tEFY6t-BjhdYneDfvkdR1CFYNHCk-ngFCa2ZCU/edit?usp=sharing"}/></CardHolder>
         <CardHolder><TrendCard backgroundId={"duo-case"} link={"https://docs.google.com/presentation/d/1UMTykt3pKEh-WNVOyyqnXaokURfTBVGOiMwbWDfA9Fw/edit?usp=sharing"}/></CardHolder>
-        <CardHolder><TrendCard/></CardHolder>
+        <CardHolder><TrendCard backgroundId={"figma-case"} link={"https://www.figma.com/design/cd5umEKMALZvaaSMnlmsDK/Design-Files?node-id=102-41&t=zhPBhCGBUUbrSA6p-1"}/></CardHolder>
         </SwiperComp>
     </SectionComp>
 
