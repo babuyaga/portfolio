@@ -52,7 +52,7 @@ const recentProjects = [{
 },
 {
   imageClass: "portfolio",
-  projectName: "Personal Portfolio Website",
+  projectName: "Portfolio Website",
   projectDesc: "A portfolio website showcasing personal projects and skills. Built with React and NextJS",
   gitlink: "https://github.com/babuyaga/portfolio",
   projectlink: "https://portfolio-sandy-five-47.vercel.app/",

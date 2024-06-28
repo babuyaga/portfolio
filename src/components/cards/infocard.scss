@@ -12,17 +12,17 @@
   }
 }
 .info__text{
-  text-align:left;
-  font-size:1rem;
+  text-align:center;
+  font-size:0.9rem;
   width:200px;
   margin:auto;
 color:#ffffff;
 }
 
 .info__title{
-  text-align:left;
+  text-align:center;
   font-weight:bold;
-  font-size:1.2rem;
+  font-size:1rem;
   text-align: center;
 }
 
@@ -41,13 +41,20 @@ filter:invert(100);
 
 
 @media only screen and (min-width: 900px) {
+
+  #info_part{
+    max-width:fit-content;
+  }
+
+
+
   .info__card{
     display:flex;
     flex-direction:column;
     gap:20px;
     padding:30px 20px 40px 20px;
     margin-bottom:auto;
-
+width:250px;
   
     a{
       color:$drop-text-bg;
@@ -55,7 +62,7 @@ filter:invert(100);
   }
 
   .info__content{
-    font-size:1.2rem;
+    font-size:1rem;
     width:fit-content;
     text-align: center;
   }

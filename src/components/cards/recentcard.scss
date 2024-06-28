@@ -4,15 +4,15 @@
   display:flex;
   flex-direction:column;
   align-items:center;
-  justify-content: space-around;
   box-sizing: border-box;
   height:563px;
   width:324px;
-  background-color:transparent;
+  background-color:red;
   border-radius:$border-radius;
   margin:auto;
   background-color:#ffffff;
   border:1px solid #000000;
+  padding:10px;
 }
 .recent__card:hover{
   z-index:3;
@@ -20,7 +20,7 @@
 }
 .recent__card_img{
 width:100%;
-height:354px;
+max-height:246px;
 display:block;
 flex-grow:1;
 background-color:white;
