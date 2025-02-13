@@ -36,7 +36,7 @@ const socials = [{app:"Instagram",icon:"instagram",link:"https://www.instagram.c
 const recentProjects = [{
   imageClass: "livereaction",
   projectName: "Live Reaction",
-  projectDesc: "Live reaction and cursor tracking for interactive sessions. Implemented with NextJS 14",
+  projectDesc: "THIS PROJECT IS AT EOL. I AM NOT MAINTAINING IT ANYMORE. Stay tuned for my next project!",
   gitlink: "https://github.com/babuyaga/livereaction",
   projectlink: "https://livereaction.vercel.app/",
   linkDesc: "Github Repository"
@@ -116,8 +116,12 @@ const openIt=(link)=>{
                   </span>
                 </div>
               <div className="text__holder2">
-                <span className="heading__2">{/*appinfo.brandname*/} I build digital products, 
-                </span><span className="heading__2"> driving them from </span><span className="heading__2">idea to launch.</span></div>
+                <span className="heading__2">{/*appinfo.brandname*/} I build digital products.
+                </span><span className="heading__2"> 
+                {/* driving them from */}
+                </span><span className="heading__2">
+                {/* idea to launch. */}
+                </span></div>
               <div className="button__holder"><button id="explore__button" className="home__button" onClick={OpenEmail}>Email</button><button id="invite__button" onClick={OpenLinkedInButton} className="home__button">LinkedIn</button></div>
 
               <button onClick={OpenInsta} className="instabutton" id="section__bottom_text">
