@@ -110,8 +110,8 @@ const openIt=(link)=>{
 
               <div className="text__holder">
                 <span className="heading__2a">0 to 1</span>
-              <span className="heading__1">Product Manager</span>
-                <span className="heading__1"> and Web Developer
+              <span className="heading__1">Full-stack</span>
+                <span className="heading__1"> Product Engineer
                   <span className="blinking-span"></span> 
                   </span>
                 </div>
